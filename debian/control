@@ -1,0 +1,17 @@
+Source: apt-get-install
+Section: admin
+Priority: optional
+Maintainer: Guilhem Lettron <guilhem@lettron.fr>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/guilhem/apt-get-install
+#Vcs-Git: git://anonscm.debian.org/collab-maint/apt-get-install.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/apt-get-install.git;a=summary
+
+Package: apt-get-install
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: apt-get wrapper to use inside Dockerfile
+ Basically only "apt-get [update|install|clean|autoremove]"
+ .
+ You can use it as `apt-get-install my_package`

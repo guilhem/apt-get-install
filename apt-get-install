@@ -1,0 +1,2 @@
+#!/bin/sh
+apt-get -q update && apt-get install "$@" && apt-get -q clean && apt-get -q -y autoremove

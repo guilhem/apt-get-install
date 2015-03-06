@@ -1,0 +1,5 @@
+apt-get-install (0.1.0) unstable; urgency=low
+
+  * Initial release
+
+ -- Guilhem Lettron <guilhem@lettron.fr>  Fri, 06 Mar 2015 20:12:51 +0100
