@@ -24,9 +24,13 @@ RUN chmod +x /usr/bin/apt-get-install
 
 ## How to use
 
-Before
+Before (dirty)
 ```
 RUN apt-get install -y my_package
+```
+Before (clean)
+```
+RUN apt-get update && apt-get install -y my_package && apt-get autoremove && apt-get clean
 ```
 
 After
