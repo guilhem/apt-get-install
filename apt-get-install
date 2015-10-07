@@ -1,2 +1,2 @@
 #!/bin/sh
-DEBIAN_FRONTEND="noninteractive" apt-get -q update && apt-get install "$@" && apt-get -q clean && apt-get -q -y autoremove
+DEBIAN_FRONTEND="noninteractive" apt-get -q update && apt-get install -y --force-yes --no-install-recommends --auto-remove "$@" && apt-get -q clean && rm -rf /var/lib/apt/lists/*

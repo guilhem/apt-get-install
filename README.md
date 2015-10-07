@@ -35,5 +35,5 @@ RUN apt-get update && apt-get install -y my_package && apt-get autoremove && apt
 
 After
 ```
-RUN apt-get-install -y my_package
+RUN apt-get-install my_package
 ```
