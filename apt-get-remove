@@ -1,0 +1,2 @@
+#!/bin/sh
+DEBIAN_FRONTEND="noninteractive" apt-get -q update && apt-get purge -y --force-yes --auto-remove "$@" && apt-get -q clean && rm -rf /var/lib/apt/lists/*
